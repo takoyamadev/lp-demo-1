@@ -7,7 +7,7 @@ import ReviewsSection from "@/components/sections/ReviewsSection";
 
 export default function Page() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen pt-16">
       <HeroSection />
 
       <BrandStorySection />

@@ -10,9 +10,9 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: "オンライン英会話サービス",
+  title: "新発売コーヒー豆ブランド - Coffee Bliss",
   description:
-    "初心者から上級者まで対応したオンライン英会話サービスで、ネイティブ講師と楽しく学びましょう。 ",
+    "最高品質のコーヒー豆をお届けする新ブランド。豊かな香りと深い味わいを体験してください。",
 };
 
 export default function RootLayout({
@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja">
+    <html lang="ja" className="scroll-smooth">
       <body className={`${notoSansJP.variable} antialiased`}>
         <Header />
         {children}

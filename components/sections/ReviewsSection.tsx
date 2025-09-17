@@ -48,7 +48,10 @@ export default function ReviewsSection() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-amber-50 to-white">
+    <section
+      id="reviews"
+      className="py-20 bg-gradient-to-b from-amber-50 to-white"
+    >
       <div className="container mx-auto px-6">
         {/* セクションタイトル */}
         <div className="text-center mb-16">

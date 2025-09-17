@@ -39,7 +39,10 @@ export default function ProductSection() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-orange-50 to-amber-50">
+    <section
+      id="product"
+      className="py-20 bg-gradient-to-br from-orange-50 to-amber-50"
+    >
       <div className="container mx-auto px-6">
         {/* セクションタイトル */}
         <div className="text-center mb-16">
