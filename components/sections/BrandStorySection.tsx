@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function BrandStorySection() {
   return (
     <section className="py-20 bg-gradient-to-b from-amber-900 to-amber-800 text-white">
@@ -33,10 +35,11 @@ export function BrandStorySection() {
             </div>
 
             <div className="relative">
-              <img
+              <Image
                 src="https://images.pexels.com/photos/4226463/pexels-photo-4226463.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt="コーヒー農園"
                 className="w-full h-80 object-cover rounded-2xl shadow-2xl"
+                fill
               />
               <div className="absolute inset-0 bg-gradient-to-t from-amber-900/50 to-transparent rounded-2xl"></div>
             </div>
@@ -45,10 +48,11 @@ export function BrandStorySection() {
           {/* 焙煎へのこだわり */}
           <div className="grid lg:grid-cols-2 gap-12 items-center mt-16">
             <div className="order-2 lg:order-1 relative">
-              <img
+              <Image
                 src="https://images.pexels.com/photos/3992206/pexels-photo-3992206.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt="焙煎工程"
                 className="w-full h-80 object-cover rounded-2xl shadow-2xl"
+                fill
               />
               <div className="absolute inset-0 bg-gradient-to-t from-amber-900/50 to-transparent rounded-2xl"></div>
             </div>

@@ -1,4 +1,5 @@
 import { Product } from "@/types";
+import Image from "next/image";
 
 export default function ProductSection() {
   // ダミー商品データ
@@ -61,10 +62,11 @@ export default function ProductSection() {
             {/* 商品画像 */}
             <div className="relative">
               <div className="bg-white rounded-3xl shadow-2xl p-8 transform hover:scale-105 transition-transform duration-500">
-                <img
+                <Image
                   src={product.imageUrl}
                   alt={product.name}
                   className="w-full h-96 object-cover rounded-2xl"
+                  fill
                 />
               </div>
               <div className="absolute -top-6 -right-6 bg-gradient-to-r from-red-500 to-pink-500 text-white px-6 py-3 rounded-full font-bold shadow-lg animate-pulse">

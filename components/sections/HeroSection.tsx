@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export function HeroSection() {
@@ -56,10 +57,11 @@ export function HeroSection() {
             <div className="relative">
               {/* メインコーヒー画像 */}
               <div className="bg-white rounded-3xl shadow-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-500">
-                <img
+                <Image
                   src="https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?auto=compress&cs=tinysrgb&w=600"
                   alt="AROMATIC BEANS コーヒー豆"
                   className="w-full h-80 object-cover rounded-2xl"
+                  fill
                 />
               </div>
 

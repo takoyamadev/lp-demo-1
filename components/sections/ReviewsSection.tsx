@@ -102,7 +102,7 @@ export default function ReviewsSection() {
 
               {/* レビューコメント */}
               <blockquote className="text-amber-800 leading-relaxed">
-                "{review.comment}"
+                {review.comment}
               </blockquote>
 
               {/* 認証マーク */}
