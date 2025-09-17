@@ -41,7 +41,7 @@ export default function ProductSection() {
   return (
     <section
       id="product"
-      className="py-20 bg-gradient-to-br from-orange-50 to-amber-50"
+      className="py-20 bg-gradient-to-br from-orange-50 to-amber-50 scroll-mt-16"
     >
       <div className="container mx-auto px-6">
         {/* セクションタイトル */}

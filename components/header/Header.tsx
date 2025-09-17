@@ -11,7 +11,7 @@ export function Header() {
   ];
 
   return (
-    <div className="flex navbar bg-base-100 shadow-sm fixed top-0 left-0 right-0 z-50 px-6 py-4">
+    <div className="flex h-16 navbar bg-base-100 shadow-sm fixed top-0 left-0 right-0 z-50 px-6 py-4">
       <div className="flex-none">
         <Link className="flex items-center space-x-2 text-orange-400" href="#">
           <div>

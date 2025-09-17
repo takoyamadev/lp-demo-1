@@ -50,7 +50,7 @@ export default function ReviewsSection() {
   return (
     <section
       id="reviews"
-      className="py-20 bg-gradient-to-b from-amber-50 to-white"
+      className="py-20 bg-gradient-to-b from-amber-50 to-white scroll-mt-16"
     >
       <div className="container mx-auto px-6">
         {/* セクションタイトル */}
