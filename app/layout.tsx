@@ -11,7 +11,7 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: "新発売コーヒー豆ブランド - Coffee Bliss",
+  title: "新発売コーヒー豆ブランド - AROMA VERDE",
   description:
     "最高品質のコーヒー豆をお届けする新ブランド。豊かな香りと深い味わいを体験してください。",
 };
