@@ -1,24 +1,18 @@
-import { BrandStorySection } from "@/components/sections/BrandStorySection";
-import CTASection from "@/components/sections/CTASection";
-import FooterSection from "@/components/sections/FooterSection";
-import { HeroSection } from "@/components/sections/HeroSection";
-import ProductSection from "@/components/sections/ProductSection";
-import ReviewsSection from "@/components/sections/ReviewsSection";
+import { BrandStory } from "@/components/sections/BrandStory";
+import { CustomerReviews } from "@/components/sections/CustomerReviews";
+import { Hero } from "@/components/sections/Hero";
+import { ProductIntroduction } from "@/components/sections/ProductIntroduction";
 
 export default function Page() {
   return (
     <main className="min-h-screen pt-16">
-      <HeroSection />
+      <Hero />
 
-      <BrandStorySection />
+      <BrandStory />
 
-      <ProductSection />
+      <ProductIntroduction />
 
-      <ReviewsSection />
-
-      <CTASection />
-
-      <FooterSection />
+      <CustomerReviews />
     </main>
   );
 }

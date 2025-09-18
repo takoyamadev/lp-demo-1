@@ -1,27 +1,14 @@
-// 商品の型定義
-export type Product = {
-  id: string;
-  name: string;
-  description: string;
-  price: number;
-  roastLevel: number; // 1-5の焙煎度
-  taste: {
-    acidity: number; // 酸味 1-5
-    bitterness: number; // 苦味 1-5
-    sweetness: number; // 甘味 1-5
-    body: number; // コク 1-5
-  };
-  origin: string;
-  imageUrl: string;
-};
-
 // レビューの型定義
 export type Review = {
-  id: string;
-  customerName: string;
-  rating: number;
+  id: number;
+  name: string;
   comment: string;
-  purchaseDate: string;
+};
+
+// 商品スペックの型定義
+export type Spec = {
+  label: string;
+  value: number; // 1-5
 };
 
 // SNSリンクの型定義
