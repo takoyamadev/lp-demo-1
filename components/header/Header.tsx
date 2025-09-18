@@ -11,43 +11,26 @@ export function Header() {
   ];
 
   return (
-    <div className="flex h-16 navbar bg-base-100 shadow-sm fixed top-0 left-0 right-0 z-50 px-6 py-4">
-      <div className="flex-none">
-        <Link className="flex items-center space-x-2 text-yellow-700" href="#">
-          <div>
-            <Logo width={20} height={20} />
-          </div>
-          <div className="font-bold">AROMA VERDE</div>
-        </Link>
-      </div>
-
-      {/* PCサイズで表示 */}
-      <div className="flex-1 flex justify-center">
-        <ul className="hidden md:block">
-          {navs.map((item) => (
-            <li key={item.name} className="inline-block px-4">
-              <Link
-                className="text-gray-600 hover:text-gray-900"
-                href={item.href}
-              >
-                {item.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div className="flex-none md:hidden">
-        <div className="dropdown dropdown-end">
-          <Menu tabIndex={0} role="button" className="m-1 cursor-pointer" />
-          <ul
-            tabIndex={0}
-            className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
+    <header className="bg-white/90 fixed top-0 left-0 right-0 z-50">
+      <div className="grid grid-cols-3 items-center h-16 mx-12">
+        <div>
+          <Link
+            className="flex items-center space-x-2 text-yellow-700"
+            href="#"
           >
+            <div>
+              <Logo width={20} height={20} />
+            </div>
+            <div className="font-bold">AROMA VERDE</div>
+          </Link>
+        </div>
+
+        <div>
+          <ul className="hidden md:flex justify-center">
             {navs.map((item) => (
               <li key={item.name} className="inline-block px-4">
                 <Link
-                  className="text-gray-600 hover:text-gray-900"
+                  className="text-gray-600 hover:text-gray-900 font-semibold"
                   href={item.href}
                 >
                   {item.name}
@@ -56,7 +39,28 @@ export function Header() {
             ))}
           </ul>
         </div>
+
+        <div className="text-end">
+          <div className="dropdown dropdown-end md:hidden">
+            <Menu tabIndex={0} role="button" className="m-1 cursor-pointer" />
+            <ul
+              tabIndex={0}
+              className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
+            >
+              {navs.map((item) => (
+                <li key={item.name} className="inline-block px-4">
+                  <Link
+                    className="text-gray-600 hover:text-gray-900"
+                    href={item.href}
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
+    </header>
   );
 }
