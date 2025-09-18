@@ -5,10 +5,9 @@ import Link from "next/link";
 
 export function Header() {
   const navs: NavItem[] = [
-    { name: "特徴", href: "#hero" },
     { name: "ストーリー", href: "#story" },
-    { name: "購入方法", href: "#product" },
-    { name: "レビュー", href: "#reviews" },
+    { name: "商品紹介", href: "#product" },
+    { name: "お客様の声", href: "#reviews" },
   ];
 
   return (

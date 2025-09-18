@@ -35,7 +35,6 @@ export function Hero() {
           <div className="mt-10 flex items-center justify-center gap-4">
             <Link
               href="https://example.com/store"
-              target="_blank"
               className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-base font-medium text-primary-foreground shadow hover:opacity-90 transition"
             >
               今すぐ購入する

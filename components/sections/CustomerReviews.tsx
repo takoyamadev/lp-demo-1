@@ -1,8 +1,8 @@
-import { Review } from "@/types";
+import { ReviewType } from "@/types";
 import Link from "next/link";
 
 export function CustomerReviews() {
-  const reviews: Review[] = [
+  const reviews: ReviewType[] = [
     {
       id: 1,
       name: "Mika / 30代",
@@ -21,6 +21,24 @@ export function CustomerReviews() {
       comment:
         "ミルクとの相性も抜群。休日のラテに使っています。香りが長く続くのが好きです。",
     },
+    {
+      id: 4,
+      name: "Yuto / 30代",
+      comment:
+        "フルーティーなコーヒーが好きで色々試していますが、これは特に気に入りました。リピートします。",
+    },
+    {
+      id: 5,
+      name: "Aki / 50代",
+      comment:
+        "コーヒー通の友人に勧められて購入。期待以上の美味しさで驚きました。香り高くて上品な味わいです。",
+    },
+    {
+      id: 6,
+      name: "Hana / 20代",
+      comment:
+        "初めてのシングルオリジンでしたが、飲みやすくて気に入りました。朝の目覚めにぴったりです。",
+    },
   ];
 
   return (
@@ -28,18 +46,16 @@ export function CustomerReviews() {
       <div className="mx-auto max-w-6xl px-6">
         <h2 className="text-3xl font-bold sm:text-4xl">お客様の声</h2>
         <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-          {reviews.map((r) => (
-            <figure
-              key={r.id}
+          {reviews.map((review, index) => (
+            <div
+              key={index}
               className="rounded-lg border border-border p-6 bg-card"
             >
-              <blockquote className="text-sm text-muted-foreground">
-                “{r.comment}”
-              </blockquote>
-              <figcaption className="mt-4 text-sm font-medium">
-                {r.name}
-              </figcaption>
-            </figure>
+              <div className="text-sm text-muted-foreground">
+                “{review.comment}”
+              </div>
+              <div className="mt-4 text-sm font-medium">{review.name}</div>
+            </div>
           ))}
         </div>
 
@@ -51,9 +67,8 @@ export function CustomerReviews() {
           </p>
           <div className="mt-6">
             <Link
-              href="https://example.com/store"
-              target="_blank"
-              className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-base font-medium text-primary-foreground shadow hover:opacity-90 transition"
+              href="#"
+              className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-white font-medium text-primary-foreground shadow hover:opacity-90 transition"
             >
               公式オンラインストアで購入
             </Link>
